@@ -16,14 +16,18 @@ public class rpcServerImpl implements IServer {
 	/* (non-Javadoc)
 	 * @see zhm.rpc.server.IServer#testMethod(java.lang.String)
 	 */
+
 	@Override
-	public String testMethod(String arg) {
+	public String testMethod1(String arg) {
 		// TODO Auto-generated method stub
 		return "hello, "+arg;
 	}
 	
-	public void testMethod1(){
-		System.out.println("11111");
+	@Override
+	public String testMethod2(String arg) {
+		// TODO Auto-generated method stub
+		return "world, "+arg;
 	}
+	
 
 }

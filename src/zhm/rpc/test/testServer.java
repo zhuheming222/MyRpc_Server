@@ -18,9 +18,12 @@ import zhu.rpc.reflect.ServerReflect;
 public class testServer {
 	public static void main(String args[]) throws InterruptedException{
 		IServer is=new rpcServerImpl();
-		Thread serverThread=new Thread(new ServerReflect(is,8081));
-		serverThread.start();
-		serverThread.join();
+		Thread serverThread1=new Thread(new ServerReflect(is,8083));
+		Thread serverThread2=new Thread(new ServerReflect(is,8084));
+		serverThread1.start();
+		serverThread2.start();
+		serverThread1.join();
+		serverThread2.join();
 	}
 
 }
