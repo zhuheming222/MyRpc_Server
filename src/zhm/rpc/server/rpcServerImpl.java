@@ -16,6 +16,11 @@ public class rpcServerImpl implements IServer {
 	/* (non-Javadoc)
 	 * @see zhm.rpc.server.IServer#testMethod(java.lang.String)
 	 */
+	@Override
+	public String testMethod(String arg) {
+		// TODO Auto-generated method stub
+		return "test, "+arg;
+	}
 
 	@Override
 	public String testMethod1(String arg) {

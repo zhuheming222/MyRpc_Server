@@ -72,7 +72,7 @@ public class ServerReflect implements Runnable {
 					System.out.println("args :  " + getObject.toString());
 					
 					// 反射得到对应方法的执行结果
-					System.out.println("invoke Method1!");
+					System.out.println("invoke Method!");
 //					MethodUtils.invokeMethod(object, "testMethod1", null);
 //					System.out.println("invoke Method:"+method);
 					Object resultObject=MethodUtils.invokeMethod(object, method,getObject);
